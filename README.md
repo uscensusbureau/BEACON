@@ -38,9 +38,11 @@ This section serves as a guide to the repository contents.
 
 For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to @uscensusbureau/BEACON team.
 
-Brian Dumbacher, @brian-dumbacher
-Daniel Whitehead, @DanWhiteheadCensus
-Sarah Pfeiff, @sdpfeiff
+Brian Dumbacher, [@brian-dumbacher](https://www.github.com/brian-dumbacher)
+
+Daniel Whitehead, [@DanWhiteheadCensus](https://www.github.com/DanWhiteheadCensus)
+
+Sarah Pfeiff, [@sdpfeiff](https://www.github.com/sdpfeiff)
 
 ## References
 
