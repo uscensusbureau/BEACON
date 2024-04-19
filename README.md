@@ -46,9 +46,9 @@ Sarah Pfeiff, [@sdpfeiff](https://www.github.com/sdpfeiff)
 
 ## References
 
-[Economic Census](https://www.census.gov/programs-surveys/economic-census.html)
+Economic Census: [https://www.census.gov/programs-surveys/economic-census.html](https://www.census.gov/programs-surveys/economic-census.html)
 
-[NAICS](https://www.census.gov/naics/)
+NAICS: [https://www.census.gov/naics/](https://www.census.gov/naics/)
 
 # License
 
