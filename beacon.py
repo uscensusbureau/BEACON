@@ -711,7 +711,7 @@ class BeaconModel(BaseEstimator, ClassifierMixin):
         text = text.lower()
 
         # ADD YOUR OWN CLEANING RULES HERE
-        # Below are a few example
+        # Below are a few examples
         text = re.sub(r"\bcarrepair\b", r" car repair ", text)
         text = re.sub(r"\block[ -]+smith", r" locksmith", text)
         text = re.sub(r"\(except.*\)", r" ", text)
