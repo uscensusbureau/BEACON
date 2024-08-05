@@ -38,17 +38,20 @@ This section serves as a guide to the repository contents.
 
 For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to @uscensusbureau/BEACON team.
 
-Brian Dumbacher, [@brian-dumbacher](https://www.github.com/brian-dumbacher)
+Brian Dumbacher ([@brian-dumbacher](https://www.github.com/brian-dumbacher))
 
-Daniel Whitehead, [@DanWhiteheadCensus](https://www.github.com/DanWhiteheadCensus)
+Daniel Whitehead ([@DanWhiteheadCensus](https://www.github.com/DanWhiteheadCensus))
 
-Sarah Pfeiff, [@sdpfeiff](https://www.github.com/sdpfeiff)
+Sarah Pfeiff ([@sdpfeiff](https://www.github.com/sdpfeiff))
 
 ## References
 
-Economic Census: [https://www.census.gov/programs-surveys/economic-census.html](https://www.census.gov/programs-surveys/economic-census.html)
-
-NAICS: [https://www.census.gov/naics/](https://www.census.gov/naics/)
+* Dumbacher, B. and Whitehead, D. (2024). <b>Industry Self-Classification in the Economic Census</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-04. [https://www2.census.gov/library/working-papers/2024/econ/industry-self-classification-economic-census.pdf](https://www2.census.gov/library/working-papers/2024/econ/industry-self-classification-economic-census.pdf)
+* Dumbacher, B. and Whitehead, D. (2024). <b>Ranked short text classification using co-occurrence features and score functions</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-06. [https://www2.census.gov/library/working-papers/2024/econ/ranked-short-text-classification-using-co-occurrence-features-and-score-functions.pdf](https://www2.census.gov/library/working-papers/2024/econ/ranked-short-text-classification-using-co-occurrence-features-and-score-functions.pdf)
+* U.S. Census Bureau. (2024). <b>Economic Census</b>. Online, accessed 5 August 2024. [https://www.census.gov/programs-surveys/economic-census.html](https://www.census.gov/programs-surveys/economic-census.html)
+* U.S. Census Bureau. (2024). <b>North American Industry Classification System</b>. Online, accessed 5 August 2024. [https://www.census.gov/naics/](https://www.census.gov/naics/)
+* Whitehead, D. and Dumbacher, B. (2024). <b>Ensemble Modeling Techniques for NAICS Classification in the Economic Census</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-03. [https://www2.census.gov/library/working-papers/2024/econ/ensemble-modeling-techniques-for-naics-classification-economic-census.pdf](https://www2.census.gov/library/working-papers/2024/econ/ensemble-modeling-techniques-for-naics-classification-economic-census.pdf)
+* Wiley, E. and Whitehead, D. (2024). <b>Implementing Interactive Classification Tools in the 2022 Economic Census</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-05. [https://www2.census.gov/library/working-papers/2024/econ/implementing-interactive-classification-tools-2022-economic-census.pdf](https://www2.census.gov/library/working-papers/2024/econ/implementing-interactive-classification-tools-2022-economic-census.pdf)
 
 # License
 
