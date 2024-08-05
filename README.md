@@ -34,6 +34,12 @@ Information retrieval models look at how words, word combinations and entire des
 
 This section serves as a guide to the repository contents.
 
+| File                                      | Description                                                  |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| ```beacon.py```                           | Implementation of simplified version of BEACON               |
+| ```beacon_example_output.txt```           | Example output produced by ```beacon.py```                   |
+| ```eurostat_BEACON_Whitehead_Pfeiff.py``` | BEACON presentation from Eurostat webinar on industry coding |
+
 ## Credits
 
 For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to the BEACON team (@uscensusbureau/BEACON):
