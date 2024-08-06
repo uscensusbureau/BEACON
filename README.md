@@ -34,11 +34,11 @@ Information retrieval models look at how words, word combinations and entire des
 
 This section serves as a guide to the repository contents.
 
-| File                                      | Description                                                  |
-| ----------------------------------------- | ------------------------------------------------------------ |
-| ```beacon.py```                           | Implementation of simplified version of BEACON               |
-| ```beacon_example_output.txt```           | Example output produced by ```beacon.py```                   |
-| ```eurostat_BEACON_Whitehead_Pfeiff.py``` | BEACON presentation from Eurostat webinar on industry coding |
+| File                                      | Description                                                 |
+| ----------------------------------------- | ----------------------------------------------------------- |
+| ```beacon.py```                           | Implementation of a simplified version of BEACON            |
+| ```beacon_example_output.txt```           | Example output from models fit using ```beacon.py```        |
+| ```eurostat_BEACON_Whitehead_Pfeiff.py``` | BEACON presentation from a Eurostat industry coding webinar |
 
 ## Credits
 
