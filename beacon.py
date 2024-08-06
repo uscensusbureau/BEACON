@@ -974,9 +974,9 @@ class BeaconModel(BaseEstimator, ClassifierMixin):
         feats_stand  = nc1s + nc2s + nc3s
         feats_umb    = self.__get_feats_umb(nc1s, nc2s, nc3s)
         feats_exact  = feats_stand
-        scores_stand    = self.__calc_scores_nonexact(feats_stand, sector)
-        scores_umb      = self.__calc_scores_nonexact(feats_umb, sector)
-        scores_exact    = self.__calc_scores_exact(feats_exact, x_exact, sector)
+        scores_stand = self.__calc_scores_nonexact(feats_stand, sector)
+        scores_umb   = self.__calc_scores_nonexact(feats_umb, sector)
+        scores_exact = self.__calc_scores_exact(feats_exact, x_exact, sector)
         # Calculate a weighted average of the "standard", "umbrella", and "exact" scores using the ensemble weights
         scores_ensemble = {naics: (1.0 - self.wt_umb - self.wt_exact) * scores_stand[naics] + self.wt_umb * scores_umb[naics] + self.wt_exact * scores_exact[naics] for naics in scores_stand}
         return self.__norm_scores(scores_ensemble)
