@@ -5,7 +5,7 @@ def main():
     print("Purpose:  Illustrate fitting BEACON models, making predictions, and using cross-validation to optimize parameters")
     print("")
 
-    #Example using 2017 data
+    # Example using 2017 data
     print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     print("@@@@    Fit BeaconModel    @@@@")
     print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
@@ -72,7 +72,7 @@ def main():
         print("{:<10}".format(naics))
     print("")
 
-    #Example using 2022 data
+    # Example using 2022 data
     print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     print("@@@@    Cross-validation example involving 'freq_thresh'          @@@@")
     print("@@@@    with two folds and three candidate values: 1, 2, and 3    @@@@")
@@ -87,14 +87,11 @@ def main():
 
     print("Cross-validation results:")
     print("")
-    #print(mod.cv_results_)
     print("{:<21}{}".format("ATTRIBUTE", "VALUE"))
     print("{:<21}{}".format("---------", "-----"))
     for cv_result in mod.cv_results_:
         print("{:<21}{}".format(cv_result, mod.cv_results_[cv_result]))
     print("")
-
-    #print(mod.best_score_)
     print("Best value of 'freq_thresh':  {}".format(mod.best_params_["freq_thresh"]))
     print("Best cross-validation score:  {}".format(mod.best_score_))
     print("")
