@@ -37,12 +37,14 @@ This section serves as a guide to the repository contents.
 | File                                      | Description                                                 |
 | ----------------------------------------- | ----------------------------------------------------------- |
 | ```beacon.py```                           | Implementation of a simplified version of BEACON            |
-| ```beacon_example_output.txt```           | Example output from models fit using ```beacon.py```        |
+| ```beacon_example.py```                   | Illustration of using ```beacon.py```                       |
+| ```beacon_example_output.txt```           | Output of ```beacon_example.py```                           |
+| ```create_example_data.py```              | Creation of example datasets using public NAICS files       |
 | ```eurostat_BEACON_Whitehead_Pfeiff.py``` | BEACON presentation from a Eurostat industry coding webinar |
 
 ## Credits
 
-For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to the BEACON team (@uscensusbureau/BEACON):
+For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to the BEACON team:
 
 * Brian Dumbacher ([@brian-dumbacher](https://www.github.com/brian-dumbacher))
 * Daniel Whitehead ([@DanWhiteheadCensus](https://www.github.com/DanWhiteheadCensus))
