@@ -47,7 +47,7 @@ def load_naics_data(vintage="2017", shuffle=False, random_state=0):
         1D NumPy array of numerical sample weights.
     """
 
-    #Check vintage
+    # Check vintage
     if not isinstance(vintage, str):
         raise ValueError("Parameter 'vintage' is not a string.")
     if vintage not in ("2017", "2022"):
