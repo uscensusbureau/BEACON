@@ -17,7 +17,7 @@ def main():
     print("          https://www.census.gov/naics/2022NAICS/6-digit_2022_Codes.xlsx")
     print("")
 
-    #2017 data WITH sample weights
+    # 2017 data WITH sample weights
     print("2017 data WITH sample weights")
     print("")
 
@@ -40,9 +40,9 @@ def main():
     combined17_tups_pre = index17_tups + codes17_tups
     combined17_tups = sorted(list(set(combined17_tups_pre)))
 
-    #Example sample weights for illustration only
-    #Based loosely on the number of establishments in each 6-digit NAICS code according to the 2017 Economic Census
-    #    (Source: publicly available EC1700BASIC table available at https://data.census.gov/)
+    # Example sample weights for illustration only
+    # Based loosely on the number of establishments in each 6-digit NAICS code according to the 2017 Economic Census
+    #     (Source: publicly available EC1700BASIC table available at https://data.census.gov/)
     weights17 = {
         "111110": "813.23",
         "111120": "180.72",
@@ -1106,12 +1106,12 @@ def main():
     f = io.open("example_data_2017.txt", "w")
     f.write("|".join(["TEXT", "NAICS", "SAMPLE_WEIGHT"]) + "\n")
     for tup in combined17_tups:
-        #Output duplicate observations to assist with illustrating cross-validation (n_splits=2);
+        # Output duplicate observations to assist with illustrating cross-validation (n_splits=2);
         f.write("|".join([tup[0], tup[1], weights17[tup[0]]]) + "\n")
         f.write("|".join([tup[0], tup[1], weights17[tup[0]]]) + "\n")
     f.close()
 
-    #2022 data WITHOUT sample weights
+    # 2022 data WITHOUT sample weights
     print("2022 data WITHOUT sample weights")
     print("")
 
@@ -1137,7 +1137,7 @@ def main():
     f = io.open("example_data_2022.txt", "w")
     f.write("|".join(["TEXT", "NAICS"]) + "\n")
     for tup in combined22_tups:
-        #Output duplicate observations to assist with illustrating cross-validation (n_splits=2);
+        # Output duplicate observations to assist with illustrating cross-validation (n_splits=2);
         f.write("|".join([tup[0], tup[1]]) + "\n")
         f.write("|".join([tup[0], tup[1]]) + "\n")
     f.close()
