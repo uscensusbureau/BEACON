@@ -7,6 +7,7 @@ Business Establishment Automated Classification of NAICS (BEACON)
 #           Jiseok Jeong <jiseok.jeong@census.gov>
 #           Sarah Pfeiff <sarah.pfeiff@census.gov>
 
+import io
 import numpy as np
 import re
 import time
@@ -14,6 +15,98 @@ from numbers import Integral, Real
 from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.utils._param_validation import Interval
 from sklearn.utils.validation import check_X_y, check_array, check_random_state, check_is_fitted
+
+def load_naics_data(vintage="2017", shuffle=False, random_state=0):
+    """
+    Load NAICS data
+
+    This method loads example NAICS datasets for fitting a BEACON classification model.
+
+    Parameters
+    ----------
+    vintage : str, default="2017"
+        Vintage of NAICS data. Valid values are "2017" and "2022".
+    
+    shuffle : boolean, default=False
+        Flag indicating whether to shuffle the observations.
+    
+    random_state : int or RandomState instance, default=0
+        The seed of the pseudo random number generator used to shuffle the observations.
+        Pass an int for reproducible output across multiple function calls.
+        Used only if shuffle=True.
+    
+    Returns
+    -------
+    X : numpy.ndarray
+        1D NumPy array of strings representing business descriptions.
+
+    y : numpy.ndarray
+        1D NumPy array of strings representing 6-digit NAICS codes.
+    
+    sample_weight : numpy.ndarray
+        1D NumPy array of numerical sample weights.
+    """
+
+    #Check vintage
+    if not isinstance(vintage, str):
+        raise ValueError("Parameter 'vintage' is not a string.")
+    if vintage not in ("2017", "2022"):
+        raise ValueError("Parameter 'vintage' is invalid. Valid values are '2017' and '2022'.")
+
+    # Prepare for reading data
+    file = "example_data_{}.txt".format(vintage)
+    data_tups = []
+    n_vars = 0
+    line_number = 0
+    len_error_flag = False
+
+    # Read data line by line
+    # io.open() checks for the existence of the data file and raises FileNotFoundError accordingly
+    f = io.open(file, "r")
+    for line in f:
+        line_number += 1
+        line_strip = line.strip()
+        if line_number == 1:
+            if line_strip != "":
+                var_names = line_strip.split("|")
+                if (var_names != ["TEXT", "NAICS"] and var_names != ["TEXT", "NAICS", "SAMPLE_WEIGHT"]):
+                    raise ValueError("Input data file does not have the expected format: TEXT|NAICS|SAMPLE_WEIGHT (SAMPLE_WEIGHT optional).")
+                n_vars = len(var_names)
+            else:
+                raise ValueError("No variable names appear on the first line of input data file.")
+        else:
+            if line_strip != "":
+                row_data = line_strip.split("|")
+                if len(row_data) != n_vars:
+                    len_error_flag = True
+                data_tups.append(tuple(row_data))
+    f.close()
+
+    # Check data
+    n_obs = len(data_tups)
+    if n_obs == 0:
+        raise ValueError("Input data file contains zero observations.")
+    if len_error_flag:
+        raise ValueError("Input data file contains observations with inconsistent numbers of variables.")
+
+    if shuffle:
+        # check_random_state() is provided by sklearn.utils.validation
+        random_state = check_random_state(random_state)
+        uniform_random = random_state.uniform(0, 1, n_obs)
+        data_tups_random = [(data_tups[i], uniform_random[i]) for i in range(n_obs)]
+        data_tups_random.sort(key=lambda z: z[1])
+        data_tups = [z[0] for z in data_tups_random]
+
+    # Create X, y, and sample_weight
+    X = np.array([tup[0] for tup in data_tups])
+    y = np.array([tup[1] for tup in data_tups])
+    if n_vars == 2:
+        sample_weight = np.ones(X.shape[0])
+    elif n_vars == 3:
+        # float() checks whether the sample weights can be converted to type float and raises ValueError accordingly
+        sample_weight = np.array([float(tup[2]) for tup in data_tups])
+
+    return X, y, sample_weight
 
 class BeaconModel(BaseEstimator, ClassifierMixin):
     """
