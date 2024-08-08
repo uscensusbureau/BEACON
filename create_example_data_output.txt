@@ -1,0 +1,25 @@
+Purpose:  Create pipe-delimited example dataset based on the publicly available 2017 NAICS Index File and 6-Digit 2017 NAICS Code File
+          Create pipe-delimited example dataset based on the publicly available 2022 NAICS Index File and 6-Digit 2022 NAICS Code File
+
+Sources:  https://www.census.gov/naics/2017NAICS/2017_NAICS_Index_File.xlsx
+          https://www.census.gov/naics/2022NAICS/2022_NAICS_Index_File.xlsx
+          https://www.census.gov/naics/2017NAICS/6-digit_2017_Codes.xlsx
+          https://www.census.gov/naics/2022NAICS/6-digit_2022_Codes.xlsx
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@    2017 data WITH sample weights    @@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+The sample weights are for illustration only and are based loosely on the number of establishments in each 6-digit
+    NAICS code according to the 2017 Economic Census (Source: EC1700BASIC table available at https://data.census.gov/)
+
+Sample size:            41918
+Number of NAICS codes:  1057
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@    2022 data WITHOUT sample weights    @@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Sample size:            42474
+Number of NAICS codes:  1012
+
