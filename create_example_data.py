@@ -42,7 +42,7 @@ def main():
 
     # Example sample weights for illustration only
     # Based loosely on the number of establishments in each 6-digit NAICS code according to the 2017 Economic Census
-    #     (Source: publicly available EC1700BASIC table available at https://data.census.gov/)
+    #     (Source: EC1700BASIC table available at https://data.census.gov/)
     weights17 = {
         "111110": "813.23",
         "111120": "180.72",
