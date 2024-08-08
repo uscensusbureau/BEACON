@@ -37,6 +37,7 @@ This section serves as a guide to the repository contents.
 | File                                        | Description                                                    |
 | ------------------------------------------- | -------------------------------------------------------------- |
 | ```create_example_data.py```                | Program for creating example datasets using public NAICS files |
+| ```create_example_data_output.txt```        | Output of ```create_example_data.py```                         |
 | ```beacon.py```                             | Codebase for implementing a simplified version of BEACON       |
 | ```beacon_example.py```                     | Program for illustrating the use of ```beacon.py```            |
 | ```beacon_example_output.txt```             | Output of ```beacon_example.py```                              |
