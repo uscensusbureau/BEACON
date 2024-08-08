@@ -11,7 +11,7 @@ def main():
     print("Purpose:  Create pipe-delimited example dataset based on the publicly available 2017 NAICS Index File and 6-Digit 2017 NAICS Code File")
     print("          Create pipe-delimited example dataset based on the publicly available 2022 NAICS Index File and 6-Digit 2022 NAICS Code File")
     print("")
-    print("Note:     Download the following sources before running this program")
+    print("Note:     Download the following files before running this program")
     print("")
     print("Sources:  https://www.census.gov/naics/2017NAICS/2017_NAICS_Index_File.xlsx")
     print("          https://www.census.gov/naics/2022NAICS/2022_NAICS_Index_File.xlsx")
