@@ -34,13 +34,13 @@ Information retrieval models look at how words, word combinations and entire des
 
 This section serves as a guide to the repository contents.
 
-| File                                      | Description                                                 |
-| ----------------------------------------- | ----------------------------------------------------------- |
-| ```beacon.py```                           | Implementation of a simplified version of BEACON            |
-| ```beacon_example.py```                   | Illustration of using ```beacon.py```                       |
-| ```beacon_example_output.txt```           | Output of ```beacon_example.py```                           |
-| ```create_example_data.py```              | Creation of example datasets using public NAICS files       |
-| ```eurostat_BEACON_Whitehead_Pfeiff.py``` | BEACON presentation from a Eurostat industry coding webinar |
+| File                                        | Description                                                    |
+| ------------------------------------------- | -------------------------------------------------------------- |
+| ```create_example_data.py```                | Program for creating example datasets using public NAICS files |
+| ```beacon.py```                             | Codebase for implementing a simplified version of BEACON       |
+| ```beacon_example.py```                     | Program for illustrating the use of ```beacon.py```            |
+| ```beacon_example_output.txt```             | Output of ```beacon_example.py```                              |
+| ```eurostat_BEACON_Whitehead_Pfeiff.pptx``` | BEACON presentation from a Eurostat industry coding webinar    |
 
 ## Credits
 
