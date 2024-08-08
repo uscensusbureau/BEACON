@@ -2,7 +2,7 @@
 
 ## Introduction
 
-BEACON (Business Establishment Automated Classification of NAICS) is a machine learning tool developed to help respondents self-designate their 6-digit NAICS (North American Industry Classification System) code on the Economic Census (EC). BEACON’s methodology is based on machine learning, natural language processing and information retrieval.
+BEACON (Business Establishment Automated Classification of NAICS) is a machine learning tool developed to help respondents self-designate their 6-digit NAICS (North American Industry Classification System) code on the Economic Census (EC). BEACON’s methodology is based on machine learning, natural language processing, and information retrieval.
 
 The EC is conducted every five years. In particular, the years ending in “2” or “7”. This survey represents approximately eight million establishments, covering most industries and all geographic areas of the United States.
 
@@ -22,9 +22,9 @@ This makes the questionnaire more dynamic. Overall, BEACON leads to less clerica
 
 ## Usage
 
-First step is the text cleaning process: convert to lower and account for numbers and punctuation, remove common “stop” words, stem words to reduce the number of word variation and correct common misspellings.
+First step is the text cleaning process: convert to lower and account for numbers and punctuation, remove common “stop” words, stem words to reduce the number of word variations, and correct common misspellings.
 
-Example: Input Text: This is a convenience store. Clean Text: conveni store
+Example: Input Text: ```This is a convenience store.``` Clean Text: ```conveni store```
 
 Underlying BEACON is a dictionary of text that occurs frequently in the cleaned training data. It consists of words, word combinations, and full-length/exact descriptions. These pieces of text serve as the model features. These features contain NAICS distributions and associated purity weights that measure how concentrated, or pure, the distribution is for each word or word combination.
 
