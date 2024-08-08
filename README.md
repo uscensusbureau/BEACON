@@ -8,7 +8,7 @@ The EC is conducted every five years. In particular, the years ending in “2”
 
 The NAICS is a hierarchical 6-digit coding structure. The first two digits represent the economic sector and the additional non-zero digits as industry detail. The U.S. Census Bureau classifies establishments by NAICS industry based on the primary business of activity of the establishment. NAICS is utilized throughout the survey life cycle: sample selection, data collection, analytical review, and publication.
 
-On the EC, respondents are asked to describe their business. There are prelisted descriptions corresponding to a suggested  NAICS code, but the respondent can also type in a description. Clerical analysis of this write-in text is a resource intensive process.
+On the EC, respondents are asked to describe their business. There are prelisted descriptions corresponding to a suggested NAICS code, but the respondent can also type in a description. Clerical analysis of this write-in text is a resource intensive process.
 
 The general idea of BEACON is the respondent inputs a business description and BEACON returns a ranked list of 6-digit NAICS code with matching industry descriptions.
 
@@ -28,7 +28,7 @@ Example: Input Text: ```This is a convenience store.``` Clean Text: ```conveni s
 
 Underlying BEACON is a dictionary of text that occurs frequently in the cleaned training data. It consists of words, word combinations, and full-length/exact descriptions. These pieces of text serve as the model features. These features contain NAICS distributions and associated purity weights that measure how concentrated, or pure, the distribution is for each word or word combination.
 
-Information retrieval models look at how words, word combinations and entire descriptions are distributed across NAICS codes. Each type (word, word combination and entire description) has their relevant scores calculated by using their NAICS distribution and their purity rates.  The individual scores are averaged, yielding relevance scores. These relevance scores range in value between 0 and 100. The scores reflect how confident BEACON is that the NAICS code is correct.
+Information retrieval models look at how words, word combinations, and entire descriptions are distributed across NAICS codes. Each type (word, word combination, and entire description) has their relevant scores calculated by using their NAICS distribution and their purity weights. The individual scores are averaged, yielding relevance scores. These relevance scores range in value between 0 and 100. The scores reflect how confident BEACON is that the NAICS code is correct.
 
 ## Repository Contents
 
