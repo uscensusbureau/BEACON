@@ -22,4 +22,3 @@ Number of NAICS codes:  1057
 
 Sample size:            42474
 Number of NAICS codes:  1012
-
