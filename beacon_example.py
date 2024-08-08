@@ -43,7 +43,7 @@ def main():
         "fast food restaurant",
         "car repair",
         "gobbledygook",
-        ]
+    ]
     preds = mod.predict(X_test)
     print("{:<35}{:<30}{:<15}".format("BUSINESS DESCRIPTION", "CLEAN TEXT", "PREDICTED NAICS"))
     print("{:<35}{:<30}{:<15}".format("--------------------", "----------", "---------------"))
