@@ -1,5 +1,14 @@
 # BEACON
 
+<p>
+<img src="https://img.shields.io/badge/repo_status-active-brightgreen?style=for-the-badge" alt="Repo Status: Active">
+<img src="https://img.shields.io/badge/license-cc0_1.0_universal-brightgreen?style=for-the-badge" alt="License: CC0 1.0 Universal">
+<img src="https://img.shields.io/badge/python-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/scikit--learn-f7931e?style=for-the-badge&logo=scikit-learn&logoColor=white&logoSize=auto" alt="scikit-learn">
+<img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+<img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
+</p>
+
 ## Introduction
 
 BEACON (Business Establishment Automated Classification of NAICS) is a machine learning tool developed to help respondents self-designate their 6-digit NAICS (North American Industry Classification System) code on the Economic Census (EC). BEACON’s methodology is based on machine learning, natural language processing, and information retrieval.
