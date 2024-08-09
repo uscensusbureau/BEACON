@@ -1112,7 +1112,7 @@ def main():
     f = io.open("example_data_2017.txt", "w")
     f.write("|".join(["TEXT", "NAICS", "SAMPLE_WEIGHT"]) + "\n")
     for tup in combined17_tups:
-        # Output duplicate observations to assist with illustrating cross-validation;
+        # Output duplicate observations to assist with illustrating cross-validation
         for i in range(n_dup17):
             f.write("|".join([tup[0], tup[1], weights17[tup[0]]]) + "\n")
     f.close()
@@ -1149,7 +1149,7 @@ def main():
     f = io.open("example_data_2022.txt", "w")
     f.write("|".join(["TEXT", "NAICS"]) + "\n")
     for tup in combined22_tups:
-        # Output duplicate observations to assist with illustrating cross-validation;
+        # Output duplicate observations to assist with illustrating cross-validation
         for i in range(n_dup22):
             f.write("|".join([tup[0], tup[1]]) + "\n")
     f.close()
