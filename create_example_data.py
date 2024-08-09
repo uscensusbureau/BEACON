@@ -8,8 +8,8 @@ def format_descr(descr_temp):
     return str(descr_temp).upper().strip()
 
 def main():
-    print("Purpose:  Create pipe-delimited example dataset based on the publicly available 2017 NAICS Index File and 6-Digit 2017 NAICS Code File")
-    print("          Create pipe-delimited example dataset based on the publicly available 2022 NAICS Index File and 6-Digit 2022 NAICS Code File")
+    print("Purpose:  Create pipe-delimited example dataset using publicly available 2017 NAICS files")
+    print("          Create pipe-delimited example dataset using publicly available 2022 NAICS files")
     print("")
     print("Note:     Download the following files before running this program")
     print("")
@@ -41,11 +41,11 @@ def main():
         if not (pd.isna(naics_temp) or pd.isna(descr_temp)):
             codes17_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
 
-    combined17_tups_pre = index17_tups + codes17_tups
-    combined17_tups = sorted(list(set(combined17_tups_pre)))
+    combined17_tups = sorted(list(set(index17_tups + codes17_tups)))
 
-    print("The sample weights are for illustration only and are based loosely on the number of establishments in each 6-digit")
-    print("    NAICS code according to the 2017 Economic Census (Source: EC1700BASIC table available at https://data.census.gov/)")
+    print("The sample weights are for illustration only and are based loosely on the number of")
+    print("    establishments in each 6-digit NAICS code according to the 2017 Economic Census")
+    print("    (Source: EC1700BASIC table available at https://data.census.gov/)")
     print("")
 
     weights17 = {
@@ -1117,7 +1117,7 @@ def main():
             f.write("|".join([tup[0], tup[1], weights17[tup[0]]]) + "\n")
     f.close()
 
-    print("Sample size:            {}".format(len(combined17_tups * n_dup17)))
+    print("Sample size:            {}".format(len(combined17_tups) * n_dup17))
     print("Number of NAICS codes:  {}".format(len(set(tup[0] for tup in combined17_tups))))
     print("")
 
@@ -1143,8 +1143,7 @@ def main():
         if not (pd.isna(naics_temp) or pd.isna(descr_temp)):
             codes22_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
 
-    combined22_tups_pre = index22_tups + codes22_tups
-    combined22_tups = sorted(list(set(combined22_tups_pre)))
+    combined22_tups = sorted(list(set(index22_tups + codes22_tups)))
 
     n_dup22 = 2
     f = io.open("example_data_2022.txt", "w")
@@ -1155,7 +1154,7 @@ def main():
             f.write("|".join([tup[0], tup[1]]) + "\n")
     f.close()
 
-    print("Sample size:            {}".format(len(combined22_tups * n_dup22)))
+    print("Sample size:            {}".format(len(combined22_tups) * n_dup22))
     print("Number of NAICS codes:  {}".format(len(set(tup[0] for tup in combined22_tups))))
     print("")
 
