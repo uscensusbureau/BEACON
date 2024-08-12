@@ -1,4 +1,4 @@
-Purpose:  Illustrate fitting BEACON models, making predictions, and using cross-validation to optimize parameters
+Purpose:  Illustrate fitting BEACON models, making NAICS predictions, and using cross-validation to optimize hyperparameters
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@    Fit BeaconModel    @@@@
