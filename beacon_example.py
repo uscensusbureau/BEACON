@@ -2,7 +2,7 @@ import beacon
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
 
 def main():
-    print("Purpose:  Illustrate fitting BEACON models, making predictions, and using cross-validation to optimize parameters")
+    print("Purpose:  Illustrate fitting BEACON models, making NAICS predictions, and using cross-validation to optimize hyperparameters")
     print("")
 
     # Example using 2017 data
