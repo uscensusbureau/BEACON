@@ -7,6 +7,19 @@ def format_naics(naics_temp):
 def format_descr(descr_temp):
     return str(descr_temp).upper().strip()
 
+def get_sector(naics):
+    sector = naics[:2]
+    # Manufacturing
+    if sector in ("32", "33"):
+        return "31"
+    # Retail Trade
+    elif sector == "45":
+        return "44"
+    # Transportation and Warehousing
+    elif sector == "49":
+        return "48"
+    return sector
+
 def main():
     print("Purpose:  Create pipe-delimited example dataset using publicly available 2017 NAICS files")
     print("          Create pipe-delimited example dataset using publicly available 2022 NAICS files")
@@ -1118,6 +1131,7 @@ def main():
     f.close()
 
     print("Sample size:            {}".format(len(combined17_tups) * n_dup17))
+    print("Number of sectors:      {}".format(len(set(get_sector(tup[0]) for tup in combined17_tups))))
     print("Number of NAICS codes:  {}".format(len(set(tup[0] for tup in combined17_tups))))
     print("")
 
@@ -1155,6 +1169,7 @@ def main():
     f.close()
 
     print("Sample size:            {}".format(len(combined22_tups) * n_dup22))
+    print("Number of sectors:      {}".format(len(set(get_sector(tup[0]) for tup in combined22_tups))))
     print("Number of NAICS codes:  {}".format(len(set(tup[0] for tup in combined22_tups))))
     print("")
 
