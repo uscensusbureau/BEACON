@@ -17,6 +17,7 @@ The sample weights are for illustration only and are based loosely on the number
     (Source: EC1700BASIC table available at https://data.census.gov/)
 
 Sample size:            41918
+Number of sectors:      20
 Number of NAICS codes:  1057
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -24,4 +25,5 @@ Number of NAICS codes:  1057
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 Sample size:            42474
+Number of sectors:      20
 Number of NAICS codes:  1012
