@@ -58,7 +58,7 @@ def main():
 
     print("The sample weights are for illustration only and are based loosely on the number of")
     print("    establishments in each 6-digit NAICS code according to the 2017 Economic Census")
-    print("    (Source: EC1700BASIC table available at https://data.census.gov/)")
+    print("    (Source: EC1700BASIC table available at https://data.census.gov)")
     print("")
 
     weights17 = {
