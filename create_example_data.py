@@ -54,7 +54,7 @@ def main():
         if not (pd.isna(naics_temp) or pd.isna(descr_temp)):
             codes17_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
 
-    combined17_tups = sorted(list(set(index17_tups + codes17_tups)))
+    combined17_tups = sorted(set(index17_tups + codes17_tups))
 
     print("The sample weights are for illustration only and are based loosely on the number of")
     print("    establishments in each 6-digit NAICS code according to the 2017 Economic Census")
@@ -1157,7 +1157,7 @@ def main():
         if not (pd.isna(naics_temp) or pd.isna(descr_temp)):
             codes22_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
 
-    combined22_tups = sorted(list(set(index22_tups + codes22_tups)))
+    combined22_tups = sorted(set(index22_tups + codes22_tups))
 
     n_dup22 = 2
     f = io.open("example_data_2022.txt", "w")
