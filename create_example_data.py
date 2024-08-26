@@ -44,7 +44,7 @@ def main():
         naics_temp = index17_df.at[i, "NAICS17"]
         descr_temp = index17_df.at[i, "INDEX ITEM DESCRIPTION"]
         if not (pd.isna(naics_temp) or naics_temp == "******" or pd.isna(descr_temp)):
-            index17_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
+            index17_tups.append((format_descr(descr_temp), format_naics(naics_temp)))
 
     codes17_df = pd.read_excel("6-digit_2017_Codes.xlsx")
     codes17_tups = []
@@ -52,7 +52,7 @@ def main():
         naics_temp = codes17_df.at[i, "2017 NAICS Code"]
         descr_temp = codes17_df.at[i, "2017 NAICS Title"]
         if not (pd.isna(naics_temp) or pd.isna(descr_temp)):
-            codes17_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
+            codes17_tups.append((format_descr(descr_temp), format_naics(naics_temp)))
 
     combined17_tups = sorted(set(index17_tups + codes17_tups))
 
@@ -1127,12 +1127,12 @@ def main():
     for tup in combined17_tups:
         # Output duplicate observations to assist with illustrating cross-validation
         for i in range(n_dup17):
-            f.write("|".join([tup[0], tup[1], weights17[tup[0]]]) + "\n")
+            f.write("|".join([tup[0], tup[1], weights17[tup[1]]]) + "\n")
     f.close()
 
     print("Sample size:            {}".format(len(combined17_tups) * n_dup17))
-    print("Number of sectors:      {}".format(len(set(get_sector(tup[0]) for tup in combined17_tups))))
-    print("Number of NAICS codes:  {}".format(len(set(tup[0] for tup in combined17_tups))))
+    print("Number of sectors:      {}".format(len(set(get_sector(tup[1]) for tup in combined17_tups))))
+    print("Number of NAICS codes:  {}".format(len(set(tup[1] for tup in combined17_tups))))
     print("")
 
     # 2022 data WITHOUT sample weights
@@ -1147,7 +1147,7 @@ def main():
         naics_temp = index22_df.at[i, "NAICS22"]
         descr_temp = index22_df.at[i, "INDEX ITEM DESCRIPTION"]
         if not (pd.isna(naics_temp) or naics_temp == "******" or pd.isna(descr_temp)):
-            index22_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
+            index22_tups.append((format_descr(descr_temp), format_naics(naics_temp)))
 
     codes22_df = pd.read_excel("6-digit_2022_Codes.xlsx")
     codes22_tups = []
@@ -1155,7 +1155,7 @@ def main():
         naics_temp = codes22_df.at[i, "2022 NAICS Code"]
         descr_temp = codes22_df.at[i, "2022 NAICS Title"]
         if not (pd.isna(naics_temp) or pd.isna(descr_temp)):
-            codes22_tups.append((format_naics(naics_temp), format_descr(descr_temp)))
+            codes22_tups.append((format_descr(descr_temp), format_naics(naics_temp)))
 
     combined22_tups = sorted(set(index22_tups + codes22_tups))
 
@@ -1169,8 +1169,8 @@ def main():
     f.close()
 
     print("Sample size:            {}".format(len(combined22_tups) * n_dup22))
-    print("Number of sectors:      {}".format(len(set(get_sector(tup[0]) for tup in combined22_tups))))
-    print("Number of NAICS codes:  {}".format(len(set(tup[0] for tup in combined22_tups))))
+    print("Number of sectors:      {}".format(len(set(get_sector(tup[1]) for tup in combined22_tups))))
+    print("Number of NAICS codes:  {}".format(len(set(tup[1] for tup in combined22_tups))))
     print("")
 
     return
