@@ -51,6 +51,7 @@ This section serves as a guide to the repository contents.
 | ```beacon_example.py```                     | Program for illustrating the use of ```beacon.py```            |
 | ```beacon_example_output.txt```             | Output of ```beacon_example.py```                              |
 | ```eurostat_BEACON_Whitehead_Pfeiff.pptx``` | BEACON presentation from a Eurostat industry coding webinar    |
+| ```2023-FCSM-BEACON-Model-Stacking.pptx```  | 2023 FCSM presentation on BEACON and applying model stacking   |
 | ```JSM_Dumbacher_Whitehead.pptx```          | 2022 JSM presentation on BEACON                                |
 
 ## Credits
