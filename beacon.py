@@ -822,7 +822,6 @@ class BeaconModel(BaseEstimator, ClassifierMixin):
 
     # Given tokenized clean text and a value of n, return a list of n-combs
     # BeaconModel considers only 1-, 2-, and 3-combs
-    # If words in the clean text repeat, multiple occurrences of the same n-comb are returned 
     def __get_ncombs(self, tokens, n):
         tokens = sorted(set(tokens))
         n_tokens = len(tokens)
