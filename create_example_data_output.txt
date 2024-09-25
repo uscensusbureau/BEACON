@@ -14,7 +14,7 @@ Sources:  https://www.census.gov/naics/2017NAICS/2017_NAICS_Index_File.xlsx
 
 The sample weights are for illustration only and are based loosely on the number of
     establishments in each 6-digit NAICS code according to the 2017 Economic Census
-    (Source: EC1700BASIC table available at https://data.census.gov)
+    (Source: EC1700BASIC table; available at https://data.census.gov)
 
 Sample size:            41918
 Number of sectors:      20
