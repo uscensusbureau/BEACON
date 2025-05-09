@@ -65,7 +65,7 @@ For more information, please see BEACON conference presentations and papers atta
 
 ## References
 
-* Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). <b>BEACON: A Tool for Industry Self-Classification in the Economic Census</b>. <i>Journal of Data Science</i>, 1-20. [https://doi.org/10.6339/25-JDS1180](https://doi.org/10.6339/25-JDS1180)
+* Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). <b>BEACON: A Tool for Industry Self-Classification in the Economic Census</b>. <i>Journal of Data Science</i>, <i>23</i>(2): 429–448. [https://doi.org/10.6339/25-JDS1180](https://doi.org/10.6339/25-JDS1180)
 * Dumbacher, B. and Whitehead, D. (2024). <b>Industry Self-Classification in the Economic Census</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-04. [https://www2.census.gov/library/working-papers/2024/econ/industry-self-classification-economic-census.pdf](https://www2.census.gov/library/working-papers/2024/econ/industry-self-classification-economic-census.pdf)
 * Dumbacher, B. and Whitehead, D. (2024). <b>Ranked short text classification using co-occurrence features and score functions</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-06. [https://www2.census.gov/library/working-papers/2024/econ/ranked-short-text-classification-using-co-occurrence-features-and-score-functions.pdf](https://www2.census.gov/library/working-papers/2024/econ/ranked-short-text-classification-using-co-occurrence-features-and-score-functions.pdf)
 * U.S. Census Bureau. (2024). <b>Economic Census</b>. Online; accessed 5 August 2024. [https://www.census.gov/programs-surveys/economic-census.html](https://www.census.gov/programs-surveys/economic-census.html)
