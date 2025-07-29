@@ -59,7 +59,7 @@ This section serves as a guide to the repository contents.
 
 For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to the BEACON team:
 
-* Brian Dumbacher ([@brian-dumbacher](https://www.github.com/brian-dumbacher))
+* Brian Dumbacher ([@brian-dumbacher-census](https://www.github.com/brian-dumbacher-census))
 * Daniel Whitehead ([@DanWhiteheadCensus](https://www.github.com/DanWhiteheadCensus))
 * Sarah Pfeiff ([@sdpfeiff](https://www.github.com/sdpfeiff))
 
