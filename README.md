@@ -55,6 +55,10 @@ This section serves as a guide to the repository contents.
 | ```2022-FCSM-Wiley-Whitehead.pdf```         | 2022 FCSM presentation on BEACON and SINCT                     |
 | ```JSM_Dumbacher_Whitehead.pdf```           | 2022 JSM presentation on BEACON                                |
 
+## Issues
+
+We appreciate any feedback you would like to provide us; please post any questions that you may have in the GitHub issues section.
+
 ## Credits
 
 For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to the BEACON team:
