@@ -65,10 +65,26 @@ For more information, please see BEACON conference presentations and papers atta
 
 ## Citation
 
-Please cite the following journal article associated with this repository:
+Please cite the following journal article with which this repository is associated:
 
 ```
-Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). BEACON: A Tool for Industry Self-Classification in the Economic Census. Journal of Data Science, 23(2): 429–448. https://doi.org/10.6339/25-JDS1180
+Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). BEACON: A Tool for Industry Self-Classification in the Economic Census. Journal of Data Science, 23(2): 429-448. https://doi.org/10.6339/25-JDS1180
+```
+
+```
+@ARTICLE{DuWhJePf2025,
+    AUTHOR = {Brian Dumbacher and Daniel Whitehead and Jiseok Jeong and Sarah Pfeiff},
+     TITLE = {BEACON: A Tool for Industry Self-Classification in the Economic Census},
+   JOURNAL = {J. Data Sci.},
+  FJOURNAL = {Journal of Data Science},
+      YEAR = {2025},
+    VOLUME = {23},
+    NUMBER = {2},
+     PAGES = {429-448},
+      ISSN = {1680-743X},
+       DOI = {10.6339/25-JDS1180},
+      SICI = {1680-743X(2025)23:2<429:BATFIS>2.0.CO;2-2},
+}
 ```
 
 ## References
