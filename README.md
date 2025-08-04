@@ -63,6 +63,14 @@ For more information, please see BEACON conference presentations and papers atta
 * Daniel Whitehead ([@DanWhiteheadCensus](https://www.github.com/DanWhiteheadCensus))
 * Sarah Pfeiff ([@sdpfeiff](https://www.github.com/sdpfeiff))
 
+## Citation
+
+Please cite the following journal article associated with this repository:
+
+```
+Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). BEACON: A Tool for Industry Self-Classification in the Economic Census. Journal of Data Science, 23(2): 429–448. https://doi.org/10.6339/25-JDS1180
+```
+
 ## References
 
 * Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). <b>BEACON: A Tool for Industry Self-Classification in the Economic Census</b>. <i>Journal of Data Science</i>, <i>23</i>(2): 429–448. [https://doi.org/10.6339/25-JDS1180](https://doi.org/10.6339/25-JDS1180)
