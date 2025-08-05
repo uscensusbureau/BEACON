@@ -59,6 +59,10 @@ This section serves as a guide to the repository contents.
 
 We appreciate any feedback you would like to provide us; please post any questions that you may have in the GitHub issues section.
 
+## Disclaimer
+
+Any opinions and conclusions expressed herein are those of the authors and do not reflect the views of the U.S. Census Bureau. No estimates—numerical or otherwise—based on internal Census Bureau information are included.
+
 ## Credits
 
 For more information, please see BEACON conference presentations and papers attached to the repository. If you have any questions or comments, please reach out to the BEACON team:
