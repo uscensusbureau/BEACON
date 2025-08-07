@@ -13,7 +13,7 @@
 
 BEACON (Business Establishment Automated Classification of NAICS) is a machine learning tool developed to help respondents self-designate their 6-digit NAICS (North American Industry Classification System) code on the Economic Census (EC). BEACON’s methodology is based on machine learning, natural language processing, and information retrieval.
 
-The EC is conducted every five years. In particular, the years ending in “2” or “7”. This survey represents approximately eight million establishments, covering most industries and all geographic areas of the United States.
+The EC is conducted every five years. In particular, the years ending in "2" or "7". This survey represents approximately eight million establishments, covering most industries and all geographic areas of the United States.
 
 The NAICS is a hierarchical 6-digit coding structure. The first two digits represent the economic sector and the additional non-zero digits as industry detail. The U.S. Census Bureau classifies establishments by NAICS industry based on the primary business of activity of the establishment. NAICS is utilized throughout the survey life cycle: sample selection, data collection, analytical review, and publication.
 
@@ -41,7 +41,7 @@ Information retrieval models look at how words, word combinations, and entire de
 
 ## Repository Contents
 
-This section serves as a guide to the repository contents.
+This section serves as a guide to the repository contents. The following files are in the root level:
 
 | File                                        | Description                                                    |
 | ------------------------------------------- | -------------------------------------------------------------- |
@@ -50,9 +50,14 @@ This section serves as a guide to the repository contents.
 | ```beacon.py```                             | Codebase for implementing a simplified version of BEACON       |
 | ```beacon_example.py```                     | Program for illustrating the use of ```beacon.py```            |
 | ```beacon_example_output.txt```             | Output of ```beacon_example.py```                              |
+
+The following files can be found in the ```presentations``` folder:
+
+| File                                        | Description                                                    |
+| ------------------------------------------- | -------------------------------------------------------------- |
 | ```eurostat_BEACON_Whitehead_Pfeiff.pdf```  | 2024 Eurostat industry coding webinar presentation on BEACON   |
 | ```2023-FCSM-BEACON-Model-Stacking.pdf```   | 2023 FCSM presentation on BEACON and applying model stacking   |
-| ```2022-FCSM-Wiley-Whitehead.pdf```         | 2022 FCSM presentation on BEACON and SINCT                     |
+| ```2022-FCSM-Wiley-Whitehead.pdf```         | 2022 FCSM presentation on BEACON and a related model SINCT     |
 | ```JSM_Dumbacher_Whitehead.pdf```           | 2022 JSM presentation on BEACON                                |
 
 ## Issues
