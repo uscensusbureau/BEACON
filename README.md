@@ -31,7 +31,7 @@ This makes the questionnaire more dynamic. Overall, BEACON leads to less clerica
 
 ## Usage
 
-First step is the text cleaning process: convert to lower and account for numbers and punctuation, remove common “stop” words, stem words to reduce the number of word variations, and correct common misspellings.
+First step is the text cleaning process: convert to lower and account for numbers and punctuation, remove common "stop" words, stem words to reduce the number of word variations, and correct common misspellings.
 
 Example: Input Text: ```This is a convenience store.``` Clean Text: ```conveni store```
 
@@ -78,7 +78,7 @@ For more information, please see BEACON conference presentations and papers atta
 
 ## Citation
 
-Please cite the following journal article with which this repository is associated:
+Please use the information in ```CITATION.bib``` to cite the journal article with which this repository is associated:
 
 ```
 Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). BEACON: A Tool for Industry Self-Classification in the Economic Census. Journal of Data Science, 23(2): 429-448. https://doi.org/10.6339/25-JDS1180
