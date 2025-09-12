@@ -50,6 +50,7 @@ limited to, the following:
      communicate, and translate a Work;
      
  ii. moral rights retained by the original author(s) and/or performer(s);
+     
 iii. publicity and privacy rights pertaining to a person's image or
      likeness depicted in a Work;
      
