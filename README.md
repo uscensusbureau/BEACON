@@ -64,9 +64,13 @@ The following files can be found in the ```presentations``` folder:
 
 We appreciate any feedback you would like to provide us; please post any questions that you may have in the GitHub issues section.
 
-## Disclaimer
+## Disclosure Statement
 
 Any opinions and conclusions expressed herein are those of the authors and do not reflect the views of the U.S. Census Bureau. No estimates—numerical or otherwise—based on internal Census Bureau information are included.
+
+## Disclaimer
+
+U.S. Census Bureau code is provided on an 'as is' basis, and the user assumes responsibility for its use. The Census Bureau has relinquished control of the information and no longer has responsibility to protect the integrity, confidentiality, or availability of the information. Any claims against the Census Bureau stemming from the use of its GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Census Bureau. The Census Bureau seal and logo shall not be used in any manner to imply endorsement of any commercial product or activity by the Census Bureau or the United States Government.
 
 ## Credits
 
@@ -109,26 +113,3 @@ Dumbacher, B., Whitehead, D., Jeong, J., and Pfeiff, S. (2025). BEACON: A Tool f
 * U.S. Census Bureau. (2024). <b>North American Industry Classification System</b>. Online; accessed 5 August 2024. [https://www.census.gov/naics/](https://www.census.gov/naics/)
 * Whitehead, D. and Dumbacher, B. (2024). <b>Ensemble Modeling Techniques for NAICS Classification in the Economic Census</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-03. [https://www2.census.gov/library/working-papers/2024/econ/ensemble-modeling-techniques-for-naics-classification-economic-census.pdf](https://www2.census.gov/library/working-papers/2024/econ/ensemble-modeling-techniques-for-naics-classification-economic-census.pdf)
 * Wiley, E. and Whitehead, D. (2024). <b>Implementing Interactive Classification Tools in the 2022 Economic Census</b>. <i>U.S. Census Bureau ADEP Working Paper Series</i>, ADEP-WP-2024-05. [https://www2.census.gov/library/working-papers/2024/econ/implementing-interactive-classification-tools-2022-economic-census.pdf](https://www2.census.gov/library/working-papers/2024/econ/implementing-interactive-classification-tools-2022-economic-census.pdf)
-
-# License
-
-As a work of the United States government, this project is in the public domain within the United States.
-
-Additionally, we waive copyright and related rights in the work worldwide through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
-
-## CC0 1.0 Universal Summary
-
-This is a human-readable summary of the
-[Legal Code (read the full text)](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
-
-### No copyright
-
-The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.
-
-You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
-
-### Other information
-
-In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as publicity or privacy rights.
-
-Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law. When using or citing the work, you should not imply endorsement by the author or the affirmer.
